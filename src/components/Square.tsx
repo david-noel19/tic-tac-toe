@@ -3,12 +3,12 @@ import styled from 'styled-components';
 import { Value } from './GameState';
 
 const StyledSquare = styled.button`
-    width: 34px;
-    height: 34px;
-    background: #fff;
-    border: 1px solid #999;
+    width: 100px;
+    height: 100px;
+    background: #D6C679;
+    border: 5px solid #FFF;
     padding: 0;
-    font-size: 24px;
+    font-size: 50px;
     font-weight: bold;
 `;
 

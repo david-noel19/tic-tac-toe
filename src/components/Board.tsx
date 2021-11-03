@@ -16,7 +16,7 @@ function Board({board, onClick }: BoardProps){
         }
     }
     return (
-        <Column gap={1}>
+        <Column gap={0}>
             <Row gap={0}>
                 <Square {...createProps(0)}/>
                 <Square {...createProps(1)}/>
