@@ -12,17 +12,15 @@ const StyledSquare = styled.button`
     font-weight: bold;
 `;
 
-type SquareProps = {
+export type SquareProps = {
     value: Value,
     onClick: () => void,
 }
 
-function Square(props: SquareProps) {
+export function Square(props: SquareProps) {
     return (
         <StyledSquare onClick={props.onClick}>
             {props.value}
         </StyledSquare>
     );
 }
-
-export default Square;

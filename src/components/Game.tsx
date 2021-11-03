@@ -1,11 +1,8 @@
 import * as React from 'react';
-import styled from 'styled-components'; 
-import { isPropertySignature } from 'typescript';
-import { BoardState, useGameState, Value } from './GameState';
+import { useGameState} from './GameState';
 import  Log from './Log';
-import  SquareProps from './Square';
 import Board from './Board';
-import  Row, Column from './Layout';
+import  {Row, Column} from './Layout';
 
 function Game(){
     const {

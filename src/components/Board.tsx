@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { BoardState } from './GameState';
-import Square from './Square';
+import {Square, SquareProps} from './Square';
+import {Row, Column} from './Layout';
 
 type BoardProps = {
     board: BoardState,
