@@ -4,6 +4,10 @@ import  Log from './Log';
 import Board from './Board';
 import  {Row, Column} from './Layout';
 
+/**
+ * Game function that sets the game
+ * @returns HTML game setup
+ */
 function Game(){
     const {
         gameState,

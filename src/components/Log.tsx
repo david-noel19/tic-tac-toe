@@ -5,6 +5,7 @@ type LogProps = {
     history: BoardState[],
     jumpTo: (step: number) => void,
 }
+
 function Log(props: LogProps) {
     return (
         <ol>

@@ -4,6 +4,9 @@ import './index.css';
 import Game from './components/Game';
 import reportWebVitals from './reportWebVitals';
 
+/**
+ * Start the tic-tac-toe game
+ */
 ReactDOM.render(
   <React.StrictMode>
     <Game />

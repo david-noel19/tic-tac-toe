@@ -8,6 +8,11 @@ type BoardProps = {
     onClick: (square: number) => void,
 }
 
+/**
+ * Board that will be rendered by the Game
+ * @param object of type BoardProps that is passed by Game.tsx
+ * @returns a column with 3 rows of squares
+ */
 function Board({board, onClick }: BoardProps){
     const createProps = (square: number): SquareProps => {
         return {
