@@ -5,6 +5,11 @@ export type Value = 'X' | 'O' | null;
 export type BoardState = Value[];
 const createBoardState = () => Array<Value>(9).fill(null);
 
+/**
+ * function to calculate the winner of the game
+ * @param boardState to identify if the game has been won
+ * @returns winning value either X or O
+ */
 function calculateWinner(boardState: BoardState){
     const winningCombinations = [
         [0, 1, 2],
@@ -16,6 +21,9 @@ function calculateWinner(boardState: BoardState){
         [0, 4, 8],
         [2, 4, 6]
     ];
+    /**
+     * If each value in the winning combination is X or O return them as the winner
+     */
     for (let i = 0; i < winningCombinations.length; i++){
         const [a, b, c] = winningCombinations[i];
         if(boardState[a] && boardState[a] === boardState[b] && boardState[a] === boardState[c]) {
@@ -29,7 +37,12 @@ export type GameState = {
     history: BoardState[],
     step: number, 
 }
-
+/**
+ * This function returns the game history, who is next,
+ * if there is a winner, and the jump to functionality 
+ * to go back to a previous move in the game history
+ * @returns the game functionality
+ */
 export function useGameState() {
     const [gameState, setGameState] = useState<GameState>({
         history: [createBoardState()],

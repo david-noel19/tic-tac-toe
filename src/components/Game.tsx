@@ -5,7 +5,9 @@ import Board from './Board';
 import  {Row, Column} from './Layout';
 
 /**
- * Game function that sets the game
+ * Game function that uses game state
+ * for game functionality and displays 
+ * the game board
  * @returns HTML game setup
  */
 function Game(){
